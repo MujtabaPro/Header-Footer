@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Sticky Header</title>
+    <link rel="stylesheet" href="style.css">
+    <!--  <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script> -->
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container1">
+                <div id="logo">MujtabaPro</div>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Blogs</a>
+                    <a href="#">Course</a>
+                    <a href="#">Sign Up</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+
+            </div>
+        </header>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).on('scroll', function() {
+            if ($(this).scrollTop() > 300) {
+                $('header').addClass('sticky');
+            } else {
+                $('header').removeClass('sticky');
+            }
+        })
+    </script>
+</body>
+
+</html>
